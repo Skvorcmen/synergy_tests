@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d85fb0d-c6e1-49c7-ab8a-02cc1b185c0b" name="Changes" comment="8 tasks">
-      <change afterPath="$PROJECT_DIR$/synergy_9.1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synergy_9.2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/synergy_9.3.py" afterDir="false" />
+    <list default="true" id="2d85fb0d-c6e1-49c7-ab8a-02cc1b185c0b" name="Changes" comment="9 tasks">
+      <change afterPath="$PROJECT_DIR$/synergy_10.1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/synergy_10.2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +93,7 @@
       <workItem from="1773637453547" duration="176000" />
       <workItem from="1777702836680" duration="281000" />
       <workItem from="1777703214686" duration="124000" />
-      <workItem from="1777703375239" duration="6406000" />
+      <workItem from="1777703375239" duration="6692000" />
     </task>
     <task id="LOCAL-00001" summary="3 и 4 задания">
       <option name="closed" value="true" />
@@ -152,7 +151,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777720197967</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="9 tasks">
+      <option name="closed" value="true" />
+      <created>1777720710025</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1777720710025</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,7 +172,8 @@
     <MESSAGE value="6 tasks" />
     <MESSAGE value="7 tasks" />
     <MESSAGE value="8 tasks" />
-    <option name="LAST_COMMIT_MESSAGE" value="8 tasks" />
+    <MESSAGE value="9 tasks" />
+    <option name="LAST_COMMIT_MESSAGE" value="9 tasks" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/synergy_tests$synergy_4_2.coverage" NAME="synergy_4.2 Coverage Results" MODIFIED="1777704328878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
