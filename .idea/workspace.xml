@@ -4,16 +4,23 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d85fb0d-c6e1-49c7-ab8a-02cc1b185c0b" name="Changes" comment="3 и 4 задания">
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="2d85fb0d-c6e1-49c7-ab8a-02cc1b185c0b" name="Changes" comment="3,4 tasks">
+      <change afterPath="$PROJECT_DIR$/synergy_5.1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/synergy_5.2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/synergy_5.3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/synergy_4.py" beforeDir="false" afterPath="$PROJECT_DIR$/synergy_4.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,6 +46,9 @@
   &quot;fromUser&quot;: false
 }</component>
   <component name="ProjectId" id="3D9mofzUx3wrIO8tzcxair7yDeN" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -46,7 +56,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.synergy_4.2.executor": "Run",
     "Python.synergy_4.executor": "Run",
+    "Python.synergy_5.1.executor": "Run",
+    "Python.synergy_5.2.executor": "Run",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -81,7 +94,7 @@
       <workItem from="1773637453547" duration="176000" />
       <workItem from="1777702836680" duration="281000" />
       <workItem from="1777703214686" duration="124000" />
-      <workItem from="1777703375239" duration="707000" />
+      <workItem from="1777703375239" duration="2875000" />
     </task>
     <task id="LOCAL-00001" summary="3 и 4 задания">
       <option name="closed" value="true" />
@@ -91,7 +104,23 @@
       <option name="project" value="LOCAL" />
       <updated>1777703440581</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="3,4 tasks">
+      <option name="closed" value="true" />
+      <created>1777704404041</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1777704404041</updated>
+    </task>
+    <task id="LOCAL-00003" summary="3,4 tasks">
+      <option name="closed" value="true" />
+      <created>1777704417991</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1777704417991</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,9 +128,13 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="3 и 4 задания" />
-    <option name="LAST_COMMIT_MESSAGE" value="3 и 4 задания" />
+    <MESSAGE value="3,4 tasks" />
+    <option name="LAST_COMMIT_MESSAGE" value="3,4 tasks" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/synergy_tests$synergy_4.coverage" NAME="synergy_4 Coverage Results" MODIFIED="1777703993845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/synergy_tests$synergy_4_2.coverage" NAME="synergy_4.2 Coverage Results" MODIFIED="1777704328878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/synergy_tests$synergy_4.coverage" NAME="synergy_4 Coverage Results" MODIFIED="1777704099067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/synergy_tests$synergy_5_2.coverage" NAME="synergy_5.2 Coverage Results" MODIFIED="1777705803448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/synergy_tests$synergy_5_1.coverage" NAME="synergy_5.1 Coverage Results" MODIFIED="1777704725382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
