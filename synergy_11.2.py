@@ -99,7 +99,7 @@ def update():
         print(f"Питомец с ID {pet_id} не найден!")
         return
 
-    print(f"\n--- Обновление информации о питомце (ID: {pet_id}) ---")
+    print(f"Обновление информации о питомце (ID: {pet_id})")
 
     for pet_name, details in pet_info.items():
         print(
