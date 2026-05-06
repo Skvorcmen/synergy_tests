@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d85fb0d-c6e1-49c7-ab8a-02cc1b185c0b" name="Changes" comment="11 tasks">
-      <change afterPath="$PROJECT_DIR$/synergy_13.1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/synergy_11.2.py" beforeDir="false" afterPath="$PROJECT_DIR$/synergy_11.2.py" afterDir="false" />
+    <list default="true" id="2d85fb0d-c6e1-49c7-ab8a-02cc1b185c0b" name="Changes" comment="14 tasks">
+      <change afterPath="$PROJECT_DIR$/synergy_15.1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +55,8 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.synergy_11.2.executor": "Run",
     "Python.synergy_13.1.executor": "Run",
+    "Python.synergy_14.1.executor": "Run",
+    "Python.synergy_15.1.executor": "Run",
     "Python.synergy_4.2.executor": "Run",
     "Python.synergy_4.executor": "Run",
     "Python.synergy_5.1.executor": "Run",
@@ -95,7 +95,7 @@
       <workItem from="1773637453547" duration="176000" />
       <workItem from="1777702836680" duration="281000" />
       <workItem from="1777703214686" duration="124000" />
-      <workItem from="1777703375239" duration="19615000" />
+      <workItem from="1777703375239" duration="19889000" />
     </task>
     <task id="LOCAL-00001" summary="3 и 4 задания">
       <option name="closed" value="true" />
@@ -177,7 +177,23 @@
       <option name="project" value="LOCAL" />
       <updated>1777721962534</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="13 tasks">
+      <option name="closed" value="true" />
+      <created>1778048227352</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1778048227352</updated>
+    </task>
+    <task id="LOCAL-00012" summary="14 tasks">
+      <option name="closed" value="true" />
+      <created>1778048360138</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1778048360138</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,13 +209,17 @@
     <MESSAGE value="9 tasks" />
     <MESSAGE value="10 tasks" />
     <MESSAGE value="11 tasks" />
-    <option name="LAST_COMMIT_MESSAGE" value="11 tasks" />
+    <MESSAGE value="13 tasks" />
+    <MESSAGE value="14 tasks" />
+    <option name="LAST_COMMIT_MESSAGE" value="14 tasks" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/synergy_tests$synergy_4_2.coverage" NAME="synergy_4.2 Coverage Results" MODIFIED="1777704328878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/synergy_tests$synergy_15_1.coverage" NAME="synergy_15.1 Coverage Results" MODIFIED="1778048461572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/synergy_tests$synergy_13_1.coverage" NAME="synergy_13.1 Coverage Results" MODIFIED="1778048182723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/synergy_tests$synergy_4.coverage" NAME="synergy_4 Coverage Results" MODIFIED="1777704099067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/synergy_tests$synergy_5_2.coverage" NAME="synergy_5.2 Coverage Results" MODIFIED="1777705803448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/synergy_tests$synergy_14_1.coverage" NAME="synergy_14.1 Coverage Results" MODIFIED="1778048334770" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/synergy_tests$synergy_5_1.coverage" NAME="synergy_5.1 Coverage Results" MODIFIED="1777704725382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/synergy_tests$synergy_11_2.coverage" NAME="synergy_11.2 Coverage Results" MODIFIED="1777813626682" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
