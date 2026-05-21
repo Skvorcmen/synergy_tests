@@ -1,0 +1,139 @@
+import time
+import random
+import config
+from game_state import GameState
+from world import World
+from helicopter import Helicopter
+from weather import Weather
+from shop import Shop, Hospital
+from save_system import SaveSystem
+from utils import clear_screen
+
+class Game:
+    def __init__(self):
+        self.config = config
+        self.state = GameState()
+        self.world = World(config.WIDTH, config.HEIGHT)
+        self.helicopter = Helicopter(self.world, config)
+        self.weather = Weather()
+        self.shop = Shop()
+        self.hospital = Hospital()
+    
+    def init_new_game(self):
+        self.state.reset(self.config)
+        self.world.init_field()
+        self.helicopter.place_on_map()
+        self.state.helicopter_x = self.helicopter.x
+        self.state.helicopter_y = self.helicopter.y
+        self.state.water_tanks = self.helicopter.water_tanks
+    
+    def draw(self):
+        clear_screen()
+        print(f"Day: {self.state.day} | Health: {'+'*self.state.health} | "
+              f"Score: {self.state.score} | Water: {self.state.water_tanks} | "
+              f"Weather: {self.weather.current}")
+        print("Controls: W/A/S/D - move | F - extinguish | R - take water | "
+              "M - shop | H - hospital | Q - save and quit")
+        print("+" + "-"*self.world.width + "+")
+        for y in range(self.world.height):
+            row = "|"
+            for x in range(self.world.width):
+                if x == self.helicopter.x and y == self.helicopter.y:
+                    row += "H"
+                else:
+                    row += self.world.field[y][x]
+            row += "|"
+            print(row)
+        print("+" + "-"*self.world.width + "+")
+    
+    def handle_damage_from_fire(self):
+        if self.world.field[self.helicopter.y][self.helicopter.x] == '*':
+            self.state.health -= 1
+            print(f"Flying over fire! Health: {self.state.health}")
+    
+    def process_input(self, key):
+        moved = False
+        if key == 'w':
+            moved = self.helicopter.move(0, -1)
+        elif key == 's':
+            moved = self.helicopter.move(0, 1)
+        elif key == 'a':
+            moved = self.helicopter.move(-1, 0)
+        elif key == 'd':
+            moved = self.helicopter.move(1, 0)
+        elif key == 'f':
+            success, reason = self.helicopter.extinguish()
+            if success:
+                self.state.score += 20
+                print("Fire extinguished! +20 points")
+            elif reason == "no_water":
+                print("No water! Fly to river and press R")
+            else:
+                print("No fire here!")
+        elif key == 'r':
+            if self.helicopter.take_water():
+                self.state.water_tanks = self.helicopter.water_tanks
+                print("Took water! +1 tank")
+            else:
+                print("No water here!")
+        elif key == 'm':
+            self.shop.show(self.state)
+            self.helicopter.water_tanks = self.state.water_tanks
+        elif key == 'h':
+            self.hospital.heal(self.state)
+        elif key == 'q':
+            SaveSystem.save(self.state, self.world)
+            self.state.game_over = True
+        
+        if moved:
+            self.state.helicopter_x = self.helicopter.x
+            self.state.helicopter_y = self.helicopter.y
+            self.handle_damage_from_fire()
+    
+    def update(self):
+        if self.state.day % 10 == 0:
+            self.weather.update()
+        
+        self.world.grow_trees(self.config.TREE_GROW_CHANCE)
+        self.world.spread_fire(self.config.FIRE_SPREAD_CHANCE)
+        
+        burned = self.world.burn_trees()
+        self.state.score -= burned * 10
+        
+        new_fire_chance = int(self.config.NEW_FIRE_CHANCE * self.weather.fire_chance_modifier)
+        if random.randint(1,100) <= new_fire_chance:
+            self.world.start_random_fire()
+        
+        self.draw()
+        
+        key = input("\nAction: ").lower()
+        self.process_input(key)
+        
+        if self.state.health <= 0:
+            self.state.game_over = True
+            print("HELICOPTER CRASHED!")
+            print(f"Final score: {self.state.score}")
+    
+    def run(self):
+        print("=== HELICOPTER FIREFIGHTER ===")
+        choice = input("1 - New game\n2 - Load game\nChoice: ")
+        
+        if choice == '2':
+            if SaveSystem.load(self.state, self.world):
+                self.helicopter.x = self.state.helicopter_x
+                self.helicopter.y = self.state.helicopter_y
+                self.helicopter.water_tanks = self.state.water_tanks
+            else:
+                self.init_new_game()
+        else:
+            self.init_new_game()
+        
+        while not self.state.game_over:
+            self.state.day += 1
+            self.update()
+            time.sleep(self.config.TICK_TIME)
+
+if __name__ == "__main__":
+    game = Game()
+    game.run()
+
