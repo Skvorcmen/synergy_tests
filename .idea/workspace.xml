@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d85fb0d-c6e1-49c7-ab8a-02cc1b185c0b" name="Changes" comment="helico">
+    <list default="true" id="2d85fb0d-c6e1-49c7-ab8a-02cc1b185c0b" name="Changes" comment="helico, tank, &#10;upgrade_shop">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HELICO/clouds.py" beforeDir="false" afterPath="$PROJECT_DIR$/HELICO/clouds.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HELICO/helicopter.py" beforeDir="false" afterPath="$PROJECT_DIR$/HELICO/helicopter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HELICO/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/HELICO/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HELICO/map.py" beforeDir="false" afterPath="$PROJECT_DIR$/HELICO/map.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HELICO/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/HELICO/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +116,8 @@
       <workItem from="1779097721089" duration="8582000" />
       <workItem from="1779170815719" duration="2375000" />
       <workItem from="1779173212316" duration="13652000" />
-      <workItem from="1779362579392" duration="5123000" />
+      <workItem from="1779362579392" duration="8195000" />
+      <workItem from="1779522200852" duration="13483000" />
     </task>
     <task id="LOCAL-00001" summary="3 и 4 задания">
       <option name="closed" value="true" />
@@ -244,7 +247,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779360114110</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="helico, tank, &#10;upgrade_shop">
+      <option name="closed" value="true" />
+      <created>1779367771744</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1779367771744</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,7 +287,8 @@
     <MESSAGE value="15 tasks" />
     <MESSAGE value="16 tasks" />
     <MESSAGE value="helico" />
-    <option name="LAST_COMMIT_MESSAGE" value="helico" />
+    <MESSAGE value="helico, tank, &#10;upgrade_shop" />
+    <option name="LAST_COMMIT_MESSAGE" value="helico, tank, &#10;upgrade_shop" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/synergy_tests$map.coverage" NAME="map Coverage Results" MODIFIED="1779172693983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/HELICO" />
